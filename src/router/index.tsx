@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "@/components";
 import Home from "@/views/home";
 import NotionAuth from "@/views/auth/notion";
+import Privacy from "@/views/privacy";
+import Terms from "@/views/terms";
 
 const LinearProgress = () => {
   return <div>loading...</div>;
@@ -39,6 +41,8 @@ const RouterView = () => {
             <Route path="/auth">
               <Route path="notion" element={<NotionAuth />}></Route>
             </Route>
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             <Route
               path="*"
               element={
