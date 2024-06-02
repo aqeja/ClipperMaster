@@ -5,6 +5,7 @@ import Home from "@/views/home";
 import NotionAuth from "@/views/auth/notion";
 import Privacy from "@/views/privacy";
 import Terms from "@/views/terms";
+import RefundPolicy from "@/views/refund-policy";
 
 const LinearProgress = () => {
   return <div>loading...</div>;
@@ -42,6 +43,7 @@ const RouterView = () => {
               <Route path="notion" element={<NotionAuth />}></Route>
             </Route>
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/refund_policy" element={<RefundPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route
               path="*"
