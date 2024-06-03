@@ -79,6 +79,9 @@ const Home = () => {
         <a href="/refund_policy" target="_blank">
           refund policy
         </a>
+        <a href="/pricing" target="_blank">
+          pricing
+        </a>
       </div>
     </>
   );
